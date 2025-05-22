@@ -19,7 +19,7 @@ Features:
 2. npm run dev
 
 # Deployment
-The app is deployed at <Your Deployment Link>
+The app is deployed at: https://theexpencetracker.netlify.app
 
 # License
 MIT
