@@ -1,11 +1,37 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  /* Font Variables */
+  --font-primary: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+
+  /* Color Scheme Variables */
+  --text-color-primary: #213547;
+  --text-color-secondary: #555;
+  --background-color-primary: #ffffff;
+  --background-color-secondary: #f0f2f5;
+  --accent-color: #0077ff;
+  --accent-color-hover: #005bbf;
+  --border-color: #ccc;
+  --error-color: #d32f2f;
+  
+  /* Form & Input Specific Variables */
+  --form-bg-color: #fff; 
+  --form-border-color: #ddd; 
+  --input-border-color: #ccc; 
+  --input-focus-border-color: var(--accent-color); 
+  --input-focus-shadow-color: rgba(0, 119, 255, 0.2);
+
+  /* Button Variables */
+  --button-primary-bg: var(--accent-color);
+  --button-primary-text: #fff;
+  --button-primary-hover-bg: var(--accent-color-hover);
+
+  font-family: var(--font-primary);
+  line-height: var(--line-height-base);
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--text-color-primary);
+  background-color: var(--background-color-primary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,26 +39,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  display: flex; 
+  place-items: center; 
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+#root {
+  width: 100%;
 }
 
 button {
@@ -42,16 +58,34 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #f0f0f0; 
+  color: var(--text-color-primary);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, background-color 0.25s;
 }
+
 button:hover {
-  border-color: #646cff;
+  border-color: var(--accent-color);
+  background-color: #e0e0e0; 
 }
+
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto -webkit-focus-ring-color; 
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
 }
 
 @media (prefers-color-scheme: light) {
@@ -66,3 +100,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+

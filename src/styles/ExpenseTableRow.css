@@ -1,0 +1,49 @@
+/* src/styles/ExpenseTableRow.css */
+.expense-row:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .edit-btn, .delete-btn, .save-btn, .cancel-btn {
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.25rem;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .edit-btn {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .edit-btn:hover {
+    background-color: #005bbf;
+  }
+  
+  .delete-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+  }
+  
+  .delete-btn:hover {
+    background-color: #cc0000;
+  }
+  
+  .save-btn {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .save-btn:hover {
+    background-color: #1e7d34;
+  }
+  
+  .cancel-btn {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #545b62;
+  }
+  
